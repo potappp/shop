@@ -1,13 +1,6 @@
 from django.db import models
 
 
-# 9.	Buyer - int
-# 10.	Purchase_price-int
-# 12.	cost of sale-int
-# 15.	Seller-int
-# 16.	GAIN-INT
-
-
 class Product(models.Model):
     title = models.CharField(max_length=127)
     vendor = models.CharField(max_length=31)
@@ -30,5 +23,3 @@ class Product(models.Model):
 
     is_published = models.BooleanField(default=False)
     is_sold = models.BooleanField(default=False)
-
-
