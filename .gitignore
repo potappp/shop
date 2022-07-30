@@ -60,7 +60,7 @@ coverage.xml
 *.pot
 
 # Django stuff:
-shop/shop/settings.py
+shop/shop/config.py
 *.log
 local_settings.py
 db.sqlite3
