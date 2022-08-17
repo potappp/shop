@@ -3,12 +3,12 @@ from django.db import models
 
 class Product(models.Model):
     title = models.CharField(max_length=127)
-    vendor = models.CharField(max_length=31)
+    vendor = models.CharField(max_length=31, blank=True)
     description = models.TextField(blank=True)
     photo = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
     media = models.FileField(upload_to='video/%Y/%m/%d/', blank=True)
 
-    purpose_price = models.IntegerField()
+    purpose_price = models.IntegerField(blank=True)
     sale_price = models.IntegerField(blank=True)
     gain = models.IntegerField(blank=True)
     duration_of_sale = models.TimeField(blank=True)
